@@ -1,0 +1,17 @@
+
+
+Tareas: por Realizar
+    Modificar Whatsapp que Te Lleve A Una Pagina Nueva
+    Poner Una Sola Flecha Flotante Que Nos Lleve Al Inicio
+    agregar un favicon el icono al lado de titulo
+    Poner Flecha Y Whatsapp En Producto
+    Modificar Nav De Productos
+    agregar una seccion Productos dentro de la pagina Principal donde explique un poco con un boton que nos lleve a la pagina productos
+    Poner Tono Gris En Asesoramiento
+    Hacer Responsivo El Sitio
+    Hacer Un Buscador De Productos Para La Página 2
+
+
+
+https://docs.google.com/document/d/1yu3RHB3wmdn3KZ8dILvwe4B04eEcMJJS/edit?usp=drive_link&ouid=112666374650144708361&rtpof=true&sd=true
+
