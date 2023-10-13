@@ -29,7 +29,7 @@ encabezado = `
 <div class="menu-boot">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"> <img src="./img/Logo2.png" alt=""> </a>
+                  <a class="navbar-brand" href="#"> <img src="./img/logo2.png" alt=""> </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                   </button>
