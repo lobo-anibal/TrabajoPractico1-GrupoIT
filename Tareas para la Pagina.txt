@@ -12,6 +12,9 @@ Tareas: por Realizar
     Hacer Un Buscador De Productos Para La Página 2
 
 
-
+Archivo Compartido
 https://docs.google.com/document/d/1yu3RHB3wmdn3KZ8dILvwe4B04eEcMJJS/edit?usp=drive_link&ouid=112666374650144708361&rtpof=true&sd=true
 
+Direccion de la pagina online con github
+
+https://lobo-anibal.github.io/TrabajoPractico1-GrupoIT/
