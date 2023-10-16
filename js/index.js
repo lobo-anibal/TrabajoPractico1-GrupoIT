@@ -1,4 +1,4 @@
-const url ="https://my-json-server.typicode.com/lobo-anibal/apis-json-archive/db";
+/* const url ="https://my-json-server.typicode.com/lobo-anibal/apis-json-archive/db";
 fetch(url)
 .then(response => response.json())
 .then(data => {
@@ -17,7 +17,7 @@ fetch(url)
     document.getElementById("data").innerHTML = aux;
 
       })
-
+ */
 
 
 

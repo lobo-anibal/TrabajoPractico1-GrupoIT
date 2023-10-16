@@ -447,3 +447,60 @@ main .sobre-nosotros {
 .seccionProductos {
     /* background-color: lightgrey; */
 }
+
+
+
+/* Pagina de Productos */
+.center{
+    text-align: center;
+}
+
+.buscador{
+    flex: 50%;
+    display:flex;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+
+}
+
+.buscador input{
+    margin: 10px;
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.buscador button{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(22, 237, 22);
+    font-size: 2rem;
+}
+
+
+
+
+.product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-card{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 31%;
+    margin: 10px;
+}
+
+.product-card img{
+width: 90%;
+object-fit: cover;
+}
+.product-card h3, h4{
+font-size-adjust: 1;
+}
+
