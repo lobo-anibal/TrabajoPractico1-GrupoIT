@@ -24,20 +24,13 @@
                 <h1>Productos para tu Empresa</h1>
             </div>
             <section id="app">
-
                 <div class="buscador">
-                    <div class="buscar-text">
+                    <div>
                         <input type="text" v-model="buscar" placeholder="nombre del producto"
                             v-on:input="productosFiltrados" size="50">
-                    </div>
-                    <div class="buscar-button">
                         <button v-on:click="limpiar">Limpiar Busqueda</button>
                     </div>
                 </div>
-
-
-
-
 
                 <div class="product-cards">
                     <div class="product-card" v-for="item in filtrados">
@@ -52,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <h1>Productos Encontrados: {{filtrados.length}}</h1>
+                <h2>Productos Encontrados: {{filtrados.length}}</h2>
                 </div>
 
             </section>
