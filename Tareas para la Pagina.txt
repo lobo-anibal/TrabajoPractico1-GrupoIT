@@ -6,10 +6,11 @@ Tareas: por Realizar
     agregar un favicon el icono al lado de titulo
     Poner Flecha Y Whatsapp En Producto
     Modificar Nav De Productos
-    agregar una seccion Productos dentro de la pagina Principal donde explique un poco con un boton que nos lleve a la pagina productos
+    agregar una seccion Productos dentro de la pagina Principal donde explique un poco con un boton que nos lleve a 
     Poner Tono Gris En Asesoramiento
     Hacer Responsivo El Sitio
-    Hacer Un Buscador De Productos Para La Página 2
+    la pagina productos - Listo
+    Hacer Un Buscador De Productos Para La Página 2 - Listo
 
 
 Archivo Compartido
