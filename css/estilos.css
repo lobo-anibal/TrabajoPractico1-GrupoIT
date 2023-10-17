@@ -421,31 +421,10 @@ main .sobre-nosotros {
 }
 
 
-.tarjetaP {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
-    width: 250px;
-    height: 400px;
-    padding: 10px;
-}
 
-.tarjetaP h6 {
-    text-align: center;
-    width: 95%;
-    font-size: 1.3vw;
-}
-
-.product {
-    text-align: center;
-    background-color: lightgrey;
-    margin-top: 40;
-}
 
 .seccionProductos {
-    /* background-color: lightgrey; */
+
 }
 
 
@@ -462,39 +441,35 @@ main .sobre-nosotros {
     align-items: center;
     width: 90%;
     height: 100px;
-    margin: 10px;
 
 }
 
 .buscador input{
     margin: 10px;
-    width: 100%;
+    width: 500px;
     height: 50px;
     border-radius: 20px;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1vh;
 }
 
 .buscador button{
-    width: 100%;
+    width: 200px;
     height: 50px;
     border-radius: 25px;
     background-color: rgb(22, 237, 22);
-    font-size: 2rem;
-    margin-left: 20px;
-    padding: 1px
+    font-size: 1vh;
 }
-
 
 .product-cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .product-card{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    width: 31%;
+    width: 32%;
     margin: 10px;
 }
 
@@ -503,12 +478,6 @@ width: 90%;
 object-fit: cover;
 }
 .product-card h3, h4{
-font-size: 1.5rem;
+font-size-adjust: 1;
 }
 
-.producto-cantidad{
-    display: flex;
-    flex-direction: column;
-    color: aquamarine;
-    background-color: #bc4e9c;
-}

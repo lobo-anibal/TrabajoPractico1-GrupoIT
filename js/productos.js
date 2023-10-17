@@ -14,24 +14,28 @@ createApp({
     fetchdata(url) {
       fetch(url)
         .then((response) => response.json())
-        .then((data) => (this.datos = data.productos));
+        .then((data) => {
+          this.datos = data.productos;
+          this.filtrados = data.productos;
+        });
     },
     productosFiltrados() {
-      if (this.buscar.length === 0) {
+      if (this.buscar === "") {
         this.filtrados = this.datos;
-        console.log("if");
-      } else {
+      } 
+      else {
         this.filtrados = this.datos.filter((producto) =>
           producto.nombre.toLowerCase().includes(this.buscar.toLowerCase())
         );
-        console.log("Else: ");
-        console.log(this.filtrados.length);
       }
-
-      this.buscar = "";
     },
-  } /*methods*/,
+    limpiar(){
+      this.buscar="";
+      this.productosFiltrados();
+    }
+  }, /*methods*/
   created() {
     this.fetchdata(this.url);
-  } /*created*/,
+  }, /*created*/
+  
 }).mount("#app");
