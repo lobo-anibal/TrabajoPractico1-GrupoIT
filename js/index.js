@@ -1,27 +1,3 @@
-/* const url ="https://my-json-server.typicode.com/lobo-anibal/apis-json-archive/db";
-fetch(url)
-.then(response => response.json())
-.then(data => {
-    console.log(data)
-    let aux = "";
-    for (let i = 0; i < data.productos.length; i++) {
-      aux += `
-            <div class="tarjetaP"> 
-            <h6>${data.productos[i].nombre}</h6>
-            <img src="${data.productos[i]["imagen-del-producto"]}" alt="${data.productos[i].nombre}" />
-            <h6>${data.productos[i].precio}</h6>
-            <h6>${data.productos[i].descripcion}</h6>
-            </div>
-         `;
-    }
-    document.getElementById("data").innerHTML = aux;
-
-      })
- */
-
-
-
-
 // Encabezado de  las paginas
 let encabezado = " ";
 
