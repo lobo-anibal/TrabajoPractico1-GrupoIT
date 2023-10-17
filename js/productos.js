@@ -5,7 +5,7 @@ createApp({
     return {
       url: "https://my-json-server.typicode.com/lobo-anibal/apis-json-archive/db",
       nombre: "andres",
-      buscar: " ",
+      buscar: "",
       datos: [],
       filtrados: [],
     }; /*return*/
@@ -16,8 +16,19 @@ createApp({
         .then((response) => response.json())
         .then((data) => (this.datos = data.productos));
     },
-    mostrar() {
-      alert("Funcion Mostrar");
+    productosFiltrados() {
+      if (this.buscar.length === 0) {
+        this.filtrados = this.datos;
+        console.log("if");
+      } else {
+        this.filtrados = this.datos.filter((producto) =>
+          producto.nombre.toLowerCase().includes(this.buscar.toLowerCase())
+        );
+        console.log("Else: ");
+        console.log(this.filtrados.length);
+      }
+
+      this.buscar = "";
     },
   } /*methods*/,
   created() {
