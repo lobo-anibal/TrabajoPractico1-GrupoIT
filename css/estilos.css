@@ -340,19 +340,26 @@ main .sobre-nosotros {
     font-size: 1rem;
 }
 
+.error-v{
+    color: red;
+    text-align: start;
+}
+
+
 
 .mapa {
     background-color: rgb(73, 87, 177, 0.3);
     width: 90%;
-    height: 70%;
-    padding: 20px;
+    height: 100%;
+    padding-right:  20px;
     text-align: center;
     font-size: 1rem;
+    
 }
 
 .mapa iframe {
     width: 90%;
-    height: 80%;
+    height: 100%;
 }
 
 
