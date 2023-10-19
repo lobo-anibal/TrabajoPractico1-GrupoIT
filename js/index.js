@@ -78,7 +78,7 @@ pieDePagina = `
         </div>
         <div>
             <h2 class="titulo-final"> GRUPO SOPORTE IT | Maximiliano Pozo - Anibal Lobo - Daniela Lopez -Juan Pavoni
-            </h2>
+            </h2>&nbsp;
         </div>
 `;
 document.querySelector(".pie-de-pagina").innerHTML = pieDePagina;
