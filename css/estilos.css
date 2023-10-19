@@ -156,7 +156,9 @@ main .sobre-nosotros {
     flex-wrap: wrap;
     justify-content: center;
 }
-.img-quienes,.contenido-textos{
+
+.img-quienes,
+.contenido-textos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -218,7 +220,7 @@ main .sobre-nosotros {
     cursor: pointer;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
     flex-grow: 1;
- 
+
 }
 
 .imagen-port>img {
@@ -257,69 +259,111 @@ main .sobre-nosotros {
 
 /* Asesoramiento */
 
-.asesor{
+.asesor {
     /* background-color: #ebb01a; */
 }
-.tarjetas{
+
+.tarjetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
 }
-.tarjeta{
+
+.tarjeta {
     width: 400px;
     margin: 20px;
 }
-.tarjeta-head{
+
+.tarjeta-head {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
-.tarjeta-head img{
+
+.tarjeta-head img {
     width: 200px;
     height: 200px;
     border: 2px solid white;
     border-radius: 50%;
     object-fit: cover;
 }
-.tarjeta-footer{
+
+.tarjeta-footer {
     display: flex;
     align-items: center;
     height: 200px;
     padding: 20px;
-    font-size: clamp(1rem, 1rem, 3rem); 
+    font-size: clamp(1rem, 1rem, 3rem);
 }
 
 
 
 /*Asesoramiento*/
 
+/*ubicacion*/
 
-
-
-.contenedor-contact {
-    box-sizing: border-box;
-    /* background-image: url('../img/Form.jpg'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.ubicacion {
+    background: #f2f2f2;
     width: 100%;
-    padding: 20px;
+}
+
+.u-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.div2 {
+    width: 400px;
+}
+
+.left-card {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid white;
 }
 
-.contact-left {
+.left-card iframe {
+    height: 400px;
+    width: 100%;
+    border: 3px solid white;
+}
+
+.right-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-size: clamp(1rem, 2rem, 2rem);
+}
+
+
+
+
+
+/*ubicacion*/
+
+
+
+/*Contacto*/
+.contacto {
+    width: 100%;
+}
+
+.contacto-conteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 50vw;
 }
 
+
+
+/*Contacto*/
 
 .sendmessage {
     display: flex;
@@ -361,28 +405,9 @@ main .sobre-nosotros {
     text-align: start;
 }
 
+/*Contacto*/
 
-
-.mapa {
-    background-color: rgb(73, 87, 177, 0.3);
-    width: 90%;
-    height: 100%;
-    padding-right: 20px;
-    text-align: center;
-    font-size: 1rem;
-
-}
-
-.mapa iframe {
-    width: 90%;
-    height: 100%;
-}
-
-
-
-
-
-
+/*Footer*/
 .contenedor-footer {
     background-color: #f2f2f2;
     width: 100%;
@@ -444,6 +469,7 @@ main .sobre-nosotros {
     z-index: 1000;
 }
 
+/*footer*/
 
 
 /* Pagina de Productos */
@@ -511,10 +537,11 @@ main .sobre-nosotros {
 .card-footer {
     display: flex;
     align-items: center;
-    height: 100px; 
-    overflow: hidden; 
+    height: 100px;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
-.card-footer h5{
-    font-size: clamp(1rem, 0.5rem, 0.1rem); 
+
+.card-footer h5 {
+    font-size: clamp(1rem, 0.5rem, 0.1rem);
 }
