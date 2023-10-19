@@ -18,8 +18,8 @@ header {
 .float-logo {
     position: fixed;
     bottom: 80px;
-    right: 20px;
-    width: 100px;
+    right: 10px;
+    width: 80px;
     z-index: 1000;
 }
 
@@ -77,6 +77,10 @@ header {
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .titulo {
@@ -145,6 +149,10 @@ header .textos-header {
     width: 100%;
 }
 
+
+
+
+
 /* Nosotros */
 
 main .sobre-nosotros {
@@ -167,6 +175,12 @@ main .sobre-nosotros {
     padding: 20px;
     flex-grow: 1;
 }
+
+.contenido-textos h3,p{
+    width: 80%;
+}
+
+
 
 .imagen-about-us {
     width: 100%;
@@ -411,40 +425,44 @@ main .sobre-nosotros {
 .contenedor-footer {
     background-color: #f2f2f2;
     width: 100%;
+    padding: 20px;
 }
 
-.cont {
+.cont{
     background-color: #4d0686;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
-    height: 10vh;
+    margin: 20px;
     color: white;
 }
 
-.content-foo {
+.content-foo{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 30%;
+    width: 200px;
+    flex-grow: 1;
 }
 
 .titulo-final {
     margin-top: 20px;
     text-align: center;
+    font-size: clamp(1rem,1.5rem,2rem);
 }
 
 .flecha {
-    float: right;
-    width: 90%;
-    height: fit-content;
-    text-align: right;
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    width: 100px;
+    z-index: 1000;
 }
 
 .imagenflecha {
-    width: 30px;
+    width: 40px;
     height: auto;
     background-color: white;
     border-radius: 40px;

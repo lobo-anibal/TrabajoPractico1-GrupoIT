@@ -27,7 +27,10 @@ encabezado = `
                         <a href="./productos.html">Productos</a>
                       </li>
                       <li class="nav-item">
-                        <a href="./index.html#Contacto">Contacto</a>
+                                <a href="./index.html#Ubicacion">Ubicacion</a>
+                      </li>
+                      <li class="nav-item">
+                                <a href="./index.html#Contacto">Contacto</a>
                       </li>
                     </ul>
                   </div>
@@ -73,11 +76,9 @@ pieDePagina = `
                 </div>
             </div>
         </div>
-
         <div>
             <h2 class="titulo-final"> GRUPO SOPORTE IT | Maximiliano Pozo - Anibal Lobo - Daniela Lopez -Juan Pavoni
             </h2>
         </div>
-
 `;
 document.querySelector(".pie-de-pagina").innerHTML = pieDePagina;
