@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <ul id="lista-productos"></ul>
+
+    <script>
+        // URL del servicio JSON
+        const url = 'https://my-json-server.typicode.com/lobo-anibal/apis-json-archive/db';
+
+        // Obtén el elemento UL donde deseas mostrar los nombres de los productos
+        const listaProductos = document.getElementById("lista-productos");
+
+        // Utiliza fetch para obtener los datos JSON
+        fetch(url)
+            .then(response => {
+                // Comprueba si la respuesta es exitosa (código de respuesta HTTP 200)
+                if (!response.ok) {
+                    throw new Error('La solicitud no fue exitosa');
+                }
+                // Parsea la respuesta JSON
+                return response.json();
+            })
+            .then(data => {
+                // Los datos JSON están disponibles aquí
+                const productos = data.productos; // Suponiendo que los productos están en una propiedad "productos"
+
+                // Recorre el array de productos y muestra los nombres en la lista
+                productos.forEach(producto => {
+                    const li = document.createElement("li"); // Crea un elemento de lista
+                    li.textContent = producto.nombre; // Establece el contenido del elemento de lista como el nombre del producto
+                    listaProductos.appendChild(li); // Agrega el elemento de lista a la lista desordenada
+                });
+
+            })
+            .catch(error => {
+                console.error('Hubo un error:', error);
+            });
+
+    </script>
+</body>
+</html>

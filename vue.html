@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+        <div id="app">
+            <div v-if="error==true">
+                <h1>error capooo</h1>
+            </div>
+            <div v-else>
+                {{ message }}
+                <h1>{{ nombre }} </h1>
+                <h3> error: {{error}} </h3>
+            </div>
+            <ul>
+                <li v-for="elemento in frutas">{{elemento}}
+                </li>
+            </ul>
+            <img v-bind:src="imagen" alt="nombre" width="200">
+
+
+
+        </div><!-- vue app -->
+
+
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./js/vue.js"></script>
+    </main>
+</body>
+
+</html>
