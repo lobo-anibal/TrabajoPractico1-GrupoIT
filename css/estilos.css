@@ -425,6 +425,7 @@ p {
     background-color: #f2f2f2;
     width: 100%;
     padding: 20px;
+    
 }
 
 .cont {
@@ -435,6 +436,7 @@ p {
     justify-content: space-evenly;
     margin: 20px;
     color: white;
+    padding: 1%;
 }
 
 .content-foo {
@@ -454,9 +456,12 @@ p {
 .titulo-final {
     margin-top: 20px;
     text-align: center;
-    font-size: clamp(1rem, 1.5rem, 2rem);
+    font-size: 75%;
+    background-color: #f2f2f2;
 }
-
+.footer{
+    background-color: #f2f2f2;
+}
 /* icono whatsapp*/
 
 .float-logo {
