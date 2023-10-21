@@ -27,20 +27,23 @@
                 <div class="buscador">
                     <div>
                         <input type="text" v-model="buscar" placeholder="nombre del producto"
-                            v-on:input="productosFiltrados" size="50">
+                            v-on:input="productosFiltrados">
+                    </div>
+                    <div>
                         <button v-on:click="limpiar">Limpiar Busqueda</button>
+
                     </div>
                 </div>
 
                 <div class="product-cards">
                     <div class="product-card" v-for="item in filtrados">
-                        <div class="center card-titulo">
+                        <div class="center card-header">
                             <h5>{{item.nombre}}</h5>
                         </div>
                         <div class="center card-img">
                             <img v-bind:src="item['imagen-del-producto']" alt="{{item.nombre}}">
                         </div>
-                        <div class="center card-descripcion">
+                        <div class="center card-footer">
                             <h5>{{item.descripcion}}</h5>
                         </div>
                     </div>
