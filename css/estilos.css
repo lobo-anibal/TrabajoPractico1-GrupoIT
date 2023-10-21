@@ -271,6 +271,12 @@ p {
     align-items: center;
 }
 
+.centered {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .tarjeta {
     width: 400px;
     margin: 20px;
@@ -299,6 +305,7 @@ p {
     height: 200px;
     padding: 20px;
     font-size: clamp(1rem, 1rem, 3rem);
+    text-align: justify;
 }
 
 
@@ -425,7 +432,7 @@ p {
     background-color: #f2f2f2;
     width: 100%;
     padding: 20px;
-    
+
 }
 
 .cont {
@@ -459,9 +466,11 @@ p {
     font-size: 75%;
     background-color: #f2f2f2;
 }
-.footer{
+
+.footer {
     background-color: #f2f2f2;
 }
+
 /* icono whatsapp*/
 
 .float-logo {
