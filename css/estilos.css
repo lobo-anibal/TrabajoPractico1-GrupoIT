@@ -15,18 +15,6 @@ header {
 }
 
 
-.float-logo {
-    position: fixed;
-    bottom: 80px;
-    right: 10px;
-    width: 80px;
-    z-index: 1000;
-}
-
-.float-logo:hover {
-    transform: scale(1.5);
-}
-
 
 /* menu bootstrap */
 .menu-boot {
@@ -176,7 +164,8 @@ main .sobre-nosotros {
     flex-grow: 1;
 }
 
-.contenido-textos h3,p{
+.contenido-textos h3,
+p {
     width: 80%;
 }
 
@@ -273,20 +262,19 @@ main .sobre-nosotros {
 
 /* Asesoramiento */
 
-.asesor {
-    /* background-color: #ebb01a; */
-}
 
 .tarjetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
+    align-items: center;
 }
 
 .tarjeta {
     width: 400px;
     margin: 20px;
+    align-content: center;
 }
 
 .tarjeta-head {
@@ -302,6 +290,7 @@ main .sobre-nosotros {
     border: 2px solid white;
     border-radius: 50%;
     object-fit: cover;
+
 }
 
 .tarjeta-footer {
@@ -314,13 +303,14 @@ main .sobre-nosotros {
 
 
 
-/*Asesoramiento*/
+
 
 /*ubicacion*/
 
 .ubicacion {
     background: #f2f2f2;
     width: 100%;
+
 }
 
 .u-conteiner {
@@ -340,6 +330,7 @@ main .sobre-nosotros {
     justify-content: center;
     align-items: center;
     border: 3px solid white;
+
 }
 
 .left-card iframe {
@@ -356,10 +347,10 @@ main .sobre-nosotros {
     font-size: clamp(1rem, 2rem, 1rem);
 }
 
-.right-card dl{
-width: 90%;
-text-align: center;
-font-size: clamp(1rem, 2rem, 2rem);
+.right-card dl {
+    width: 90%;
+    text-align: center;
+    font-size: clamp(1rem, 2rem, 2rem);
 }
 
 
@@ -400,6 +391,9 @@ font-size: clamp(1rem, 2rem, 2rem);
     height: 100px;
 }
 
+.boton {
+    padding: 5px;
+}
 
 
 .contactForm {
@@ -410,6 +404,8 @@ font-size: clamp(1rem, 2rem, 2rem);
     text-align: center;
     font-size: 1rem;
     justify-content: space-around;
+    border-radius: 3%;
+
 }
 
 .form-control {
@@ -431,7 +427,7 @@ font-size: clamp(1rem, 2rem, 2rem);
     padding: 20px;
 }
 
-.cont{
+.cont {
     background-color: #4d0686;
     display: flex;
     flex-wrap: wrap;
@@ -441,7 +437,7 @@ font-size: clamp(1rem, 2rem, 2rem);
     color: white;
 }
 
-.content-foo{
+.content-foo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -450,20 +446,42 @@ font-size: clamp(1rem, 2rem, 2rem);
     flex-grow: 1;
 }
 
-.content-foo h4,p{
-text-align: center;
+.content-foo h4,
+p {
+    text-align: center;
 }
 
 .titulo-final {
     margin-top: 20px;
     text-align: center;
-    font-size: clamp(1rem,1.5rem,2rem);
+    font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+/* icono whatsapp*/
+
+.float-logo {
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    width: 80px;
+    z-index: 1000;
+}
+
+.float-logo:hover {
+    transform: scale(1.5);
+}
+
+
+/* icono flecha*/
+
+.flecha:hover {
+    transform: scale(1.5);
 }
 
 .flecha {
     position: fixed;
     bottom: 100px;
-    left: 20px;
+    left: 40px;
     width: 100px;
     z-index: 1000;
 }
