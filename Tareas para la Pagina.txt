@@ -13,6 +13,7 @@ Tareas: por Realizar
     usar fuentes google o revisar cual usa todo el proyecto
     revisar los textos de la seccion servicios
     Generar Documento del proyecto
+    modifique mapa
 
 
 Archivo Compartido
