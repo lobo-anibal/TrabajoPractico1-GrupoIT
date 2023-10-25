@@ -398,9 +398,12 @@ p {
     height: 100px;
 }
 
+/* boton enviar de formulario */
+
 .boton {
     padding: 5px;
 }
+
 
 
 .contactForm {
@@ -488,9 +491,8 @@ p {
 
 /* icono flecha*/
 
-.flecha:hover {
-    transform: scale(1.5);
-}
+.flecha{animation:flecha 0.4s; } @keyframes flecha{0%{transform:scale(1)}100%{transform:scale(.5)}}
+
 
 .flecha {
     position: fixed;
