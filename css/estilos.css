@@ -9,6 +9,15 @@ body {
     font-size: clamp(10px, 3vw, 24px);
 }
 
+body.card-container {
+    font-family: Raleway, sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ddd;
+    perspective: 50em;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -143,8 +152,10 @@ header .textos-header {
 
 /* Nosotros */
 
+
 main .sobre-nosotros {
-    padding: 30px 0 60px 0;
+    padding: 50px 0 100px 0;
+    font-family:'Roboto', sans-serif;;
 }
 
 .contenedor-sobre-nosotros {
@@ -159,8 +170,9 @@ main .sobre-nosotros {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    padding: 20px;
+    width: 500px;
+    height: 475px;
+   
     flex-grow: 1;
 }
 
@@ -172,26 +184,28 @@ p {
 
 
 .imagen-about-us {
-    width: 100%;
+    width: 120%;
+    height: 95%;
     object-fit: cover;
 }
 
 
 .contenido-textos h3 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: auto;
 }
 
 .contenido-textos h3 span {
     background: #4d0686;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 70%;
     display: inline-block;
-    text-align: center;
     width: 30px;
     height: 30px;
     padding: 2px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 .contenido-textos p {
@@ -279,6 +293,7 @@ p {
 
 .tarjeta {
     width: 400px;
+    height: 400px;
     margin: 20px;
     align-content: center;
 }
@@ -291,8 +306,8 @@ p {
 }
 
 .tarjeta-head img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border: 2px solid white;
     border-radius: 50%;
     object-fit: cover;
