@@ -6,13 +6,13 @@ Tareas: por Realizar
     hacer Responsivo El Sitio
     la pagina productos - Listo
     Hacer Un Buscador De Productos Para La Página 2 - Listo
+    Poner Flecha Y Whatsapp En Producto Listo
 
-    agregar un favicon el icono al lado de titulo
-    Poner Flecha Y Whatsapp En Producto
-    Agregar una animacion en algun lugar
-    usar fuentes google o revisar cual usa todo el proyecto
-    revisar los textos de la seccion servicios
-    Generar Documento del proyecto
+    agregar un favicon el icono al lado de titulo -Juan
+    Agregar una animacion en algun lugar - Daniela
+    usar fuentes google o revisar cual usa todo el proyecto - Daniela
+    revisar los textos de la seccion servicios - Anibal
+    Generar Documento del proyecto - Juan
 
 
 Archivo Compartido
