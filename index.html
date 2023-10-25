@@ -13,6 +13,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -57,8 +61,25 @@
 
         <div>
             <section class="textos-header">
-                <h1 id="inicio">Brindamos Soluciones para tu Empresa</h1>
+
+                <div>
+                    <svg>
+                        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                            Isd Computacion
+                        </text>
+                    </svg>
+                </div>
+
+
+                <h1 id="inicio" >Brindamos Soluciones para tu Empresa</h1>
                 <h2> Soporte IT </h2>
+
+
+
+
+
+
+                
             </section>
             <div class="wave" style="height: 150px; overflow: hidden;">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -218,7 +239,7 @@
                 <div class="sendmessage">
                     <h1>Si tenes consultas, podes dejarla en este espacio</h1>
                 </div>
-                <form form onsubmit="return validarF()" class="contactForm">
+                <form  id="Fomulario" onsubmit="return validarF()" class="contactForm">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Apellido y Nombre" />
                     <div id="name-v" class="error-v">&nbsp</div>
                     <input type="text" class="form-control" name="email" id="email" placeholder="Correo Electronico">
