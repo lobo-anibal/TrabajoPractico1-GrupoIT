@@ -40,5 +40,5 @@ function validarF() {
         consultaV.innerHTML = "&nbsp";
     }
 
-    return !error; // Return true if there are no validation errors, allowing the form to submit
+    return !error;
 }
