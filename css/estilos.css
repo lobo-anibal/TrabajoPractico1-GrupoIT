@@ -405,8 +405,24 @@ p {
 
 .boton {
     padding: 5px;
+    font-family: arial;
+    color: #14396A !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 4px 4px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
 }
 
+.boton:hover{
+    color: #14396A !important;
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+
+}
 
 .contactForm {
     background-color: rgb(73, 87, 177, 0.3);
@@ -616,27 +632,44 @@ p {
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 svg {
-	font-family: "Russo One", sans-serif;
-	width: 100vw; 
+    font-family: "Russo One", sans-serif;
+    width: 100vw;
     height: 100%;
 }
+
 svg text {
-	animation: stroke 5s infinite alternate;
-	stroke-width: 2;
-	stroke: #911886;
-	font-size: 10vw;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #911886;
+    font-size: 10vw;
 }
+
 @keyframes stroke {
-	0%   {
-		fill: rgba(199,204,190,0); stroke: rgb(149, 93, 196);;
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
-	}
-	70%  {fill: rgba(199,204,190,0); stroke: rgb(142, 90, 184); }
-	80%  {fill: rgba(199,204,190,0); stroke: rgb(146, 85, 197); stroke-width: 3; }
-	100% {
-		fill: rgb(223, 227, 216); stroke: rgba(145, 24, 134, 0);
-		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-	}
+    0% {
+        fill: rgba(199, 204, 190, 0);
+        stroke: rgb(149, 93, 196);
+        ;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(199, 204, 190, 0);
+        stroke: rgb(142, 90, 184);
+    }
+
+    80% {
+        fill: rgba(199, 204, 190, 0);
+        stroke: rgb(146, 85, 197);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: rgb(223, 227, 216);
+        stroke: rgba(145, 24, 134, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
 }
-
-
