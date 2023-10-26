@@ -230,7 +230,7 @@ p {
 
 .imagen-port {
     width: 250px;
-    max-height: 120px;
+    max-height: 150px;
     margin: 20px;
     overflow: hidden;
     position: relative;
@@ -266,8 +266,13 @@ p {
 }
 
 .hover-galeria p {
+    width: 95%;
+    height: 90%;
     color: #fff;
-
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .imagen-port:hover .hover-galeria {
