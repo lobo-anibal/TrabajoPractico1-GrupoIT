@@ -690,3 +690,8 @@ svg text {
         stroke-width: 0;
     }
 }
+
+#dirmove:hover{
+        animation: rubberBand; 
+        animation-duration: 2s;
+}
