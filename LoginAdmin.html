@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/LoginAdmin.css ">
+    <title>Login</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <form class="login-form" @submit.prevent="login">
+                <h2>Login</h2>
+                <label for="username">Usuario:</label>
+                <input v-model="username" type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input v-model="password" type="password" id="password" name="password" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/LoginAdmin.js"></script>
+</body>
+</html>
+

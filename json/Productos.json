@@ -1,6 +1,7 @@
 {
   "productos": [
     {
+      "id":1,
       "nombre": "Router Cisco ISR 2900 Series",
       "descripcion": "Router empresarial de alto rendimiento con características avanzadas de seguridad.",
       "precio": 799.99,
@@ -8,6 +9,7 @@
       "imagen-del-producto": "https://itprice.com/images/cisco/images/img201803/CiscoONEISR2911-Router-GigE-WANports3-rack-mountable(C1-CISCO2911K9)-1519639549.jpg"
     },
     {
+      "id":2,
       "nombre": "Switch Cisco Catalyst 3850",
       "descripcion": "Switch de capa 3 con capacidad de apilamiento y administración avanzada.",
       "precio": 1299.99,
@@ -15,6 +17,7 @@
       "imagen-del-producto": "https://datacenter360.net/wp-content/uploads/2019/08/Catalyst-C3850-24.jpg"
     },
     {
+      "id":3,
       "nombre": "Firewall Fortinet FortiGate 60E",
       "descripcion": "Firewall de próxima generación con protección contra amenazas avanzada.",
       "precio": 899.99,
@@ -22,6 +25,7 @@
       "imagen-del-producto": "https://cmctelco.com/wp-content/uploads/2023/08/fortinet-fortigate-80f-500x500-1.webp"
     },
     {
+      "id":4,
       "nombre": "Access Point Ubiquiti UniFi AC Pro",
       "descripcion": "Punto de acceso de alto rendimiento para redes inalámbricas de gran escala.",
       "precio": 199.99,
@@ -29,6 +33,7 @@
       "imagen-del-producto": "https://www.mastecnologia.com.ar/images/productos/14139.png"
     },
     {
+      "id":5,
       "nombre": "Router ASUS RT-AX88U",
       "descripcion": "Router Wi-Fi 6 de alto rendimiento para hogares y pequeñas empresas.",
       "precio": 299.99,
@@ -36,6 +41,7 @@
       "imagen-del-producto": "https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/663585_546002_05_package_comping.jpg"
     },
     {
+      "id":6,
       "nombre": "Switch HP Aruba 2930F",
       "descripcion": "Switch de capa 3 con capacidad PoE para redes empresariales.",
       "precio": 699.99,
@@ -43,6 +49,7 @@
       "imagen-del-producto": "https://http2.mlstatic.com/D_NQ_NP_633193-MLA27788546513_072018-O.webp"
     },
     {
+      "id":7,
       "nombre": "Firewall Palo Alto Networks PA-220",
       "descripcion": "Firewall de próxima generación con capacidades de detección de amenazas avanzadas.",
       "precio": 1299.99,
@@ -50,6 +57,7 @@
       "imagen-del-producto": "https://5.imimg.com/data5/RQ/DX/RJ/SELLER-18936307/palo-alto-server.jpg"
     },
     {
+      "id":8,
       "nombre": "Router MikroTik RB4011iGS+RM",
       "descripcion": "Router de alto rendimiento con múltiples puertos Gigabit y opciones de enrutamiento avanzado.",
       "precio": 249.99,
@@ -57,88 +65,12 @@
       "imagen-del-producto": "https://5.imimg.com/data5/SELLER/Default/2022/6/KY/JX/RG/105101351/mikrotik-rb4011igs-rm-ethernet-routers-500x500.jpg"
     },
     {
+      "id":9,
       "nombre": "Switch D-Link DGS-1100-24P",
       "descripcion": "Switch PoE de 24 puertos para redes empresariales con capacidad de gestión.",
       "precio": 399.99,
       "uso-recomendado": "Redes empresariales",
       "imagen-del-producto": "https://http2.mlstatic.com/D_Q_NP_692388-MLC41066187681_032020-O.webp"
-    },
-    {
-      "nombre": "Firewall SonicWall TZ400",
-      "descripcion": "Firewall de alto rendimiento con protección contra amenazas avanzada y VPN.",
-      "precio": 899.99,
-      "uso-recomendado": "Seguridad de red",
-      "imagen-del-producto": "https://5.imimg.com/data5/OM/RQ/BR/SELLER-100901064/sonicwall-tz400-firewall-500x500.jpg"
-    },
-    {
-      "nombre": "Access Point TP-Link EAP225",
-      "descripcion": "Punto de acceso Wi-Fi de doble banda para redes empresariales.",
-      "precio": 79.99,
-      "uso-recomendado": "Redes empresariales",
-      "imagen-del-producto": "https://http2.mlstatic.com/D_Q_NP_760034-MLU69972234483_062023-O.webp"
-    },
-    {
-      "nombre": "Router Netgear Nighthawk AX12",
-      "descripcion": "Router Wi-Fi 6 de alto rendimiento para juegos y transmisión de medios.",
-      "precio": 299.99,
-      "uso-recomendado": "Juegos y entretenimiento",
-      "imagen-del-producto": "https://www.bhphotovideo.com/images/multiple_images/item_images/1553525435000_IMG_1965247.jpg"
-    },
-    {
-      "nombre": "Switch Linksys LGS318",
-      "descripcion": "Switch de 18 puertos Gigabit para pequeñas empresas y redes domésticas.",
-      "precio": 149.99,
-      "uso-recomendado": "Pequeñas empresas y redes domésticas",
-      "imagen-del-producto": "https://cdn11.bigcommerce.com/s-1i834776za/images/stencil/500x659/products/16002/219842/1025957549__85283.1680214141.jpg?c=1"
-    },
-    {
-      "nombre": "Firewall WatchGuard Firebox T35",
-      "descripcion": "Firewall de alto rendimiento con seguridad de red avanzada y capacidades VPN.",
-      "precio": 699.99,
-      "uso-recomendado": "Seguridad de red",
-      "imagen-del-producto": "https://m.media-amazon.com/images/I/41LDa7WXacL.jpg"
-    },
-    {
-      "nombre": "Access Point EnGenius EAP1300",
-      "descripcion": "Punto de acceso Wi-Fi de alta velocidad para entornos empresariales.",
-      "precio": 119.99,
-      "uso-recomendado": "Redes empresariales",
-      "imagen-del-producto": "https://m.media-amazon.com/images/I/212J9l5Jn5L.jpg"
-    },
-    {
-      "nombre": "Router Synology RT2600ac",
-      "descripcion": "Router de alto rendimiento con opciones avanzadas de control parental y almacenamiento en red.",
-      "precio": 229.99,
-      "uso-recomendado": "Redes domésticas",
-      "imagen-del-producto": "https://i.ebayimg.com/images/g/OdwAAOSwcb5lFrf7/s-l500.jpg"
-    },
-    {
-      "nombre": "Switch TP-Link TL-SG1024DE",
-      "descripcion": "Switch de 24 puertos Gigabit con capacidad de gestión para redes empresariales.",
-      "precio": 149.99,
-      "uso-recomendado": "Redes empresariales",
-      "imagen-del-producto": "imagen_switch_tplink.jpg"
-    },
-    {
-      "nombre": "Firewall Sophos XG 105",
-      "descripcion": "Firewall de seguridad de próxima generación con protección contra amenazas avanzada.",
-      "precio": 999.99,
-      "uso-recomendado": "Seguridad de red",
-      "imagen-del-producto": "https://5.imimg.com/data5/SELLER/Default/2021/10/AB/ZD/WK/139937965/sophos-xgs-126-firewall-device-and-appliance-500x500.jpg"
-    },
-    {
-      "nombre": "Access Point Meraki MR33",
-      "descripcion": "Punto de acceso Wi-Fi administrado en la nube para redes empresariales.",
-      "precio": 399.99,
-      "uso-recomendado": "Redes empresariales",
-      "imagen-del-producto": "https://www.lineadatascan.com/wp-content/uploads/2020/01/mr33_g.jpg"
-    },
-    {
-      "nombre": "Router ASUS ROG Rapture GT-AX11000",
-      "descripcion": "Router Wi-Fi 6 de alto rendimiento para juegos con opciones de personalización avanzada.",
-      "precio": 499.99,
-      "uso-recomendado": "Juegos en línea",
-      "imagen-del-producto": "https://http2.mlstatic.com/D_Q_NP_694775-MLA48277882149_112021-O.webp"
     }
   ]
 }

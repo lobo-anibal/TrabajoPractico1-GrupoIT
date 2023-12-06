@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+.seccionProductos {
+    max-width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.buscador {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.buscador input {
+    flex: 1;
+    padding: 8px;
+    width: 40vw;
+}
+
+.table-responsive {
+    width: 80vw;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.filat {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.tbheader, .tbcolumn {
+    padding: 10px;
+    text-align: left;
+}
+
+.tbcolumn img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btnEditar{
+    background-color: #34c8db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btnEliminar {
+    background-color: #db3442;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+
+.btnEditar:hover, .btnEliminar:hover {
+    background-color: #55abe4;
+}

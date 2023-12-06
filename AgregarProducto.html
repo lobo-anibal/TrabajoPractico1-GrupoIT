@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/formulariosCrud.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="encabezado">
+
+    </header>
+
+    <body class="body">
+        <h1>Formulario de Carga de Productos</h1>
+        <section id="app" class="section">
+            <form id="productoForm">
+                <hr>
+                <label for="nombre" class="labelp">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" v-model="nombre" class="inputp"><br>
+
+                <label for="descripcion" class="labelp">Descripcion:</label>
+                <input type="text" id="descripcion" name="descripcion" v-model="descripcion" class="inputp"><br>
+
+                <label for="precio" class="labelp">Precio:</label>
+                <input type="number" id="precio" name="precio" v-model="precio" class="inputp"><br>
+                
+                <label for="stock" class="labelp">Stock:</label>
+                <input type="number" id="stock" name="stock" v-model="stock" class="inputp"><br>
+                
+                <label for="imagen" class="labelp">URL de la Imagen:</label>
+                <input type="url" id="imagen" name="imagen" v-model="imagen" class="inputp"><br>
+                <hr>
+                <button type="button" @click="agregar()">Enviar</button>
+            </form>
+        </section>
+    </body>
+    <footer class="pie-de-pagina">
+
+    </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
