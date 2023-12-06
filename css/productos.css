@@ -7,16 +7,16 @@ body {
 .product-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; /* Distribuir tarjetas uniformemente */
+  justify-content: space-evenly;
 }
 
 .product-card {
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-bottom: 20px;
-  width: calc(33.33% - 20px); /* Espaciado y distribución uniforme */
+  width: calc(33.33% - 20px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
+  box-sizing: border-box;
 }
 
 .card-header,
@@ -32,8 +32,8 @@ body {
 
 .card-img img {
   max-width: 100%;
-  height: 150px; /* Establecer el tamaño deseado */
-  object-fit: cover; /* Para manejar imágenes de diferentes proporciones */
+  height: 150px; 
+  object-fit: cover;
 }
 
 .card-footer h5 {

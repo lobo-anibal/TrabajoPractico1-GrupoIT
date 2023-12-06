@@ -1,4 +1,4 @@
-//console.log(location.search);
+
 var id = location.search.substr(4);
 //console.log(id);
 
@@ -7,7 +7,6 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      //url: "https://wolf323.pythonanywhere.com/productos/" + id,
       url: "https://wolf323empresa.pythonanywhere.com/productos/" + id,
       buscar: "",
       datos: [],
