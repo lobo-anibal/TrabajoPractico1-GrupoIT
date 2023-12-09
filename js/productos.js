@@ -12,7 +12,8 @@ createApp({
       imagen: "",
       precio: 0,
       stock: 0,
-      descripcion:""
+      descripcion: "",
+      pComprados:[],
     }; /*return*/
   } /*data */,
   methods: {
@@ -44,35 +45,40 @@ createApp({
         method: "DELETE",
       };
       fetch(url, options)
-        .then((res) => res.text()) 
+        .then((res) => res.text())
         .then((res) => {
           alert("Registro Eliminado");
-          location.reload(); 
+          location.reload();
         });
     },
-    agregar(){
+    agregar() {
       let producto = {
-          nombre:this.nombre,
-          precio: this.precio,
-          stock: this.stock,
-          imagen:this.imagen,
-          descripcion:this.descripcion
-      }
+        nombre: this.nombre,
+        precio: this.precio,
+        stock: this.stock,
+        imagen: this.imagen,
+        descripcion: this.descripcion,
+      };
       var options = {
-          body:JSON.stringify(producto),
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          redirect: 'follow'
-      }
+        body: JSON.stringify(producto),
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        redirect: "follow",
+      };
       fetch(this.url, options)
-          .then(function () {
-              alert("Registro grabado")
-              window.location.href = "./productosAdmin.html";
-          })
-          .catch(err => {
-              console.error(err);
-              alert("Error al Grabar") 
-          })      
+        .then(function () {
+          alert("Registro grabado");
+          window.location.href = "./productosAdmin.html";
+        })
+        .catch((err) => {
+          console.error(err);
+          alert("Error al Grabar");
+        });
+    },
+    comprar(producto) {
+      this.pComprados.push(producto);
+      sessionStorage.setItem('pComprados', JSON.stringify(this.pComprados));
+      console.log("..........>",this.pComprados)
     },
   } /*methods*/,
   created() {
