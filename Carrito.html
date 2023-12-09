@@ -26,8 +26,8 @@
             </div>
             <section id="app">
                 <div class="buscador">
-                  
-                   
+
+
                 </div>
                 <table class="table-responsive">
                     <tr class="filat">
@@ -35,34 +35,22 @@
                         <th class="tbheader">Nombre</th>
                         <th class="tbheader">Precio</th>
                         <th class="tbheader">Imagen</th>
-                        <th class="tbheader"></th>
-                        <th class="tbheader"></th>
                     </tr>
 
-                    <tr v-for="item in filtrados" :key="item.id">
-                        <td class="tbcolumn">{{item.id}}</td>
+                    <tr v-for="item in carrito" :key="item.id">
+                        <td class="tbcolumn">{{item.cantidad}}</td>
                         <td class="tbcolumn">{{item.nombre}}</td>
                         <td class="tbcolumn">{{item.precio}}</td>
-                        <td class="tbcolumn"><img :src="item.imagen" alt="Imagen del producto" width="80"></td>
-
-
-                        <td class="tbcolumn">
-                            <button @click="" class="btnEditar"><a :href="'EditarProducto.html?id='+ item.id" class="btnEditar">Editar</a></button>
-                        </td>
-                        <td class="tbcolumn">
-                            <button @click="eliminar(item.id)" class="btnEliminar">Eliminar</button>
-                        </td>
+                        <td class="tbcolumn"><img :src="item.imagen" width="80"></td>
                     </tr>
                 </table>
-
-
-                
             </section>
         </section>
-        
-    </div class="carritofooter">
-    <button type="button" class="btnFinalizarComprar">Finalizar Compra</button>
-    </div>
+
+        <div class="carritofooter">
+            <button type="button" class="btn btn-success" >Finalizar Compra</button>
+        </div>
+
     </main>
     <footer class="pie-de-pagina">
         <!-- Piede pagina de todas las Paginas script -->

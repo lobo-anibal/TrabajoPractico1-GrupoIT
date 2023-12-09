@@ -24,7 +24,6 @@ createApp({
         //console.log("User:",this.username,"==", usuario.nombre, "Password:",this.password,"==", usuario.password);
         if (this.username === usuario.nombre &&this.password === usuario.password) {
           this.aux = false;
-          alert("Inicio de sesión exitoso");
           window.location.href = "./productosAdmin.html";
           sessionStorage.setItem("username", this.username);
         }

@@ -14,6 +14,9 @@ createApp({
       stock: 0,
       descripcion: "",
       pComprados:[],
+      carrito:[],
+      cant:0,
+      uActivo:"",
     }; /*return*/
   } /*data */,
   methods: {
@@ -23,7 +26,10 @@ createApp({
         .then((data) => {
           this.datos = data;
           this.filtrados = data;
-          console.log("Productos:", this.datos);
+          this.uActivo = sessionStorage.getItem("username");
+          this.carrito = JSON.parse(sessionStorage.getItem("pComprados")) || [];
+          // console.log("Productos:", this.datos);
+          // console.log("usuario:", this.uActivo);
         });
     },
     productosFiltrados() {
@@ -76,9 +82,19 @@ createApp({
         });
     },
     comprar(producto) {
-      this.pComprados.push(producto);
+      const encontrar = this.pComprados.find((p) => p.id === producto.id);
+      this.cant++;
+      if (encontrar) {
+        encontrar.cantidad++;
+      } else {
+        this.pComprados.push({ ...producto, cantidad: 1 });
+      }
       sessionStorage.setItem('pComprados', JSON.stringify(this.pComprados));
-      console.log("..........>",this.pComprados)
+      console.log("Productos Comprados:", this.pComprados);
+      // alert("Producto Agregado al Carrito");
+    },
+    finalizarcompra(){
+      alert("Gracias por su Compra")
     },
   } /*methods*/,
   created() {

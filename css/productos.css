@@ -52,4 +52,7 @@ button:hover {
   background-color: rgba(97, 210, 154, 0.656);
 }
 
-
+.pie-compras{
+  display: flex;
+  justify-content: space-around;
+}

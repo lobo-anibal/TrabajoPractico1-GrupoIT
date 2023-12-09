@@ -35,6 +35,14 @@ h1 {
     width: 40vw;
 }
 
+.uActivo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .table-responsive {
     width: 80vw;
     border-collapse: collapse;
@@ -89,9 +97,7 @@ h1 {
 /* Carrito de Compras */
 
 .carritofooter{
-background-color: #55abe4;
-width: 800px;
-height: 800px;
+text-align: center;
 }
 
 .btnFinalizarComprar{
