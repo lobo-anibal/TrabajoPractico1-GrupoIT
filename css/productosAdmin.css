@@ -81,5 +81,19 @@ h1 {
 
 
 .btnEditar:hover, .btnEliminar:hover {
-    background-color: #55abe4;
+    background-color: #131c21 !important;
+    width: 800px !important;
+}
+
+
+/* Carrito de Compras */
+
+.carritofooter{
+background-color: #55abe4;
+width: 800px;
+height: 800px;
+}
+
+.btnFinalizarComprar{
+
 }
