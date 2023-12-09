@@ -22,6 +22,10 @@
     <body class="body">
         <h1>Formulario de Carga de Productos</h1>
         <section id="app" class="section">
+
+            <button class="cerrar" type="button" onclick="redirigir()">X</button>
+
+
             <form id="productoForm">
                 <hr>
                 <label for="nombre" class="labelp">Nombre del Producto:</label>
@@ -39,7 +43,7 @@
                 <label for="imagen" class="labelp">URL de la Imagen:</label>
                 <input type="url" id="imagen" name="imagen" v-model="imagen" class="inputp"><br>
                 <hr>
-                <button type="button" @click="agregar()">Enviar</button>
+                <button class="Enviar"    type="button" @click="agregar()">Enviar</button>
             </form>
         </section>
     </body>

@@ -79,3 +79,8 @@ createApp({
     this.fetchdata(this.url);
   } /*created*/,
 }).mount("#app");
+
+
+function redirigir() {
+  window.location.href = "./productosAdmin.html";
+}

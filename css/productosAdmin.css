@@ -35,6 +35,17 @@ h1 {
     width: 40vw;
 }
 
+.botonesADM button {
+    color: black;
+    background-color: #3498db!important;
+  
+}
+
+.botonesADM button a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: black; /* Cambia el color del texto */
+}
+
 .table-responsive {
     width: 80vw;
     border-collapse: collapse;

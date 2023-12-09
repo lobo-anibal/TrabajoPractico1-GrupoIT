@@ -31,9 +31,9 @@
                         <input type="text" v-model="buscar" placeholder="nombre del producto"
                             v-on:input="productosFiltrados">
                     </div>
-                    <div>
+                    <div class="botonesADM">
                         <button v-on:click="limpiar">Limpiar Busqueda</button>
-                        <button v-on:click="limpiar"><a href="./LoginAdmin.html"> Adminstrar Productos</a></button>
+                        
                     </div>
                 </div>
 
@@ -48,8 +48,8 @@
                         <div class="center card-footer">
                             <h5>Precio: {{item.precio}}</h5>
                         </div>
-                        <div>
-                            <button>Comprar</button>
+                        <div class="botonesADM">
+                            <button >Comprar</button>
                         </div>
                     </div>
                 </div>
