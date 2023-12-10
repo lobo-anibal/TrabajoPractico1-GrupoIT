@@ -13,10 +13,11 @@ createApp({
       precio: 0,
       stock: 0,
       descripcion: "",
-      pComprados:[],
-      carrito:[],
-      cant:0,
-      uActivo:"",
+      pComprados: [],
+      carrito: [],
+      cant: 0,
+      uActivo: "",
+      total: 0,
     }; /*return*/
   } /*data */,
   methods: {
@@ -89,14 +90,22 @@ createApp({
       } else {
         this.pComprados.push({ ...producto, cantidad: 1 });
       }
-      sessionStorage.setItem('pComprados', JSON.stringify(this.pComprados));
+      sessionStorage.setItem("pComprados", JSON.stringify(this.pComprados));
       console.log("Productos Comprados:", this.pComprados);
       // alert("Producto Agregado al Carrito");
     },
-    finalizarcompra(){
-      alert("Gracias por su Compra")
+    finalizarcompra() {
+      alert("Gracias por su Compra");
+      window.location.href = "./productos.html";
     },
   } /*methods*/,
+  computed: {
+    totalCompra() {
+      this.total = this.carrito.reduce((sum, item) => sum + item.precio * item.cantidad,0);
+      console.log("total--> ", this.total);
+      return this.carrito.reduce((sum, item) => sum + item.precio * item.cantidad,0);
+    },
+  },
   created() {
     this.fetchdata(this.url);
   } /*created*/,

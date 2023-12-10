@@ -31,9 +31,10 @@
                 </div>
                 <table class="table-responsive">
                     <tr class="filat">
-                        <th class="tbheader">Id</th>
+                        <th class="tbheader">Cantidad</th>
                         <th class="tbheader">Nombre</th>
                         <th class="tbheader">Precio</th>
+                        <th class="tbheader">Subtotal</th>
                         <th class="tbheader">Imagen</th>
                     </tr>
 
@@ -41,15 +42,21 @@
                         <td class="tbcolumn">{{item.cantidad}}</td>
                         <td class="tbcolumn">{{item.nombre}}</td>
                         <td class="tbcolumn">{{item.precio}}</td>
+                        <td class="tbcolumn">{{item.precio * item.cantidad}} </td>
                         <td class="tbcolumn"><img :src="item.imagen" width="80"></td>
                     </tr>
+
                 </table>
+                
+                <div class="totalfooter">
+                    <h4>Total: {{totalCompra}} </h4>
+                </div>
+                <div class="carritofooter">
+                    <button type="button" class="btn btn-success" @click="finalizarcompra">Finalizar Compra</button>
+                </div>
             </section>
         </section>
 
-        <div class="carritofooter">
-            <button type="button" class="btn btn-success" >Finalizar Compra</button>
-        </div>
 
     </main>
     <footer class="pie-de-pagina">
