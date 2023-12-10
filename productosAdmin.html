@@ -26,6 +26,10 @@
             </div>
             <section id="app">
                 <div class="buscador">
+                    <div class="uActivo">
+                        <h6>Usuario Activo</h6>
+                        <h4>{{uActivo}} </h4>
+                    </div>
                     <div>
                         <input type="text" v-model="buscar" placeholder="nombre del producto"
                             v-on:input="productosFiltrados">

@@ -49,17 +49,23 @@
                             <h5>Precio: {{item.precio}}</h5>
                         </div>
                         <div class="botonesADM">
-                            <button >Comprar</button>
+                            <button  v-on:click="comprar(item)">Comprar</button>
                         </div>
                     </div>
                 </div>
-                <h2>Productos Encontrados: {{filtrados.length}}</h2>
+                
+                <div>
+                    <h2>Productos Encontrados: {{filtrados.length}}</h2>
+                </div>
+                <div class="pie-compras">
+                    <h2>Productos en el carrito: {{cant}}</h2>
+                    <a type="button" class="btn btn-success" href="./Carrito.html">Ver el Carrito</a>
                 </div>
 
             </section>
         </section>
-        
-        
+
+
     </main>
     <footer class="pie-de-pagina">
         <!-- Piede pagina de todas las Paginas script -->

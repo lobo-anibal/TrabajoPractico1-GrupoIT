@@ -46,6 +46,14 @@ h1 {
     color: black; /* Cambia el color del texto */
 }
 
+.uActivo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .table-responsive {
     width: 80vw;
     border-collapse: collapse;
@@ -92,5 +100,13 @@ h1 {
 
 
 .btnEditar:hover, .btnEliminar:hover {
-    background-color: #55abe4;
+    background-color: #131c21 !important;
+    width: 800px !important;
+}
+
+
+/* Carrito de Compras */
+
+.carritofooter{
+text-align: center;
 }
