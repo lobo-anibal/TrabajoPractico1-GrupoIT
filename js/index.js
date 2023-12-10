@@ -33,8 +33,8 @@ encabezado = `
                             <li class="nav-item">
                                 <a href="./index.html#Contacto">Contacto</a>
                             </li>
-                            <li>
-                            <a href="./LoginAdmin.html"> Iniciar sesion</a></button>
+                            <li class="nav-item">
+                            <a href="./LoginAdmin.html" >Iniciar sesion</a></button>
                             </li>
                         </ul>
                     </div>

@@ -108,16 +108,13 @@ nav {
     padding: 30px 50px 0 0;
 }
 
-nav>a {
-    color: #fff;
-    font-weight: 300;
+
+.nav-item a {
+    color: white;
     text-decoration: none;
-    margin-right: 10px;
 }
 
-nav>a:hover {
-    text-decoration: underline;
-}
+
 
 header .textos-header {
     display: flex;
@@ -155,7 +152,8 @@ header .textos-header {
 
 main .sobre-nosotros {
     padding: 50px 0 100px 0;
-    font-family:'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    ;
 }
 
 .contenedor-sobre-nosotros {
@@ -172,7 +170,7 @@ main .sobre-nosotros {
     align-items: center;
     width: 500px;
     height: 475px;
-   
+
     flex-grow: 1;
 }
 
@@ -423,18 +421,18 @@ p {
 .boton {
     padding: 5px;
     font-family: arial;
-  color: #FFFFFF !important;
-  font-size: 14px;
-  text-shadow: 1px 1px 0px #7CACDE;
-  box-shadow: 1px 1px 1px #BEE2F9;
-  padding: 10px 25px;
-  border-radius: 10px;
-  border: 2px solid #3866A3;
-  background: #A079EE;
-  background: linear-gradient(to top, #A079EE, #8E4DCF);
+    color: #FFFFFF !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #A079EE;
+    background: linear-gradient(to top, #A079EE, #8E4DCF);
 }
 
-.boton:hover{
+.boton:hover {
     color: #DFE8E4 !important;
     background: #964DCF;
     background: linear-gradient(to top, #964DCF, #D46BEE);
@@ -527,7 +525,19 @@ p {
 
 /* icono flecha*/
 
-.flecha{animation:flecha 0.4s; } @keyframes flecha{0%{transform:scale(1)}100%{transform:scale(.5)}}
+.flecha {
+    animation: flecha 0.4s;
+}
+
+@keyframes flecha {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(.5)
+    }
+}
 
 
 .flecha {
@@ -691,7 +701,7 @@ svg text {
     }
 }
 
-#dirmove:hover{
-        animation: rubberBand; 
-        animation-duration: 2s;
+#dirmove:hover {
+    animation: rubberBand;
+    animation-duration: 2s;
 }

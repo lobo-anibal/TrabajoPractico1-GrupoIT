@@ -99,9 +99,14 @@ h1 {
 
 
 
-.btnEditar:hover, .btnEliminar:hover {
-    background-color: #131c21 !important;
-    width: 800px !important;
+.btnEditar:hover{
+    background-color: #0897e4;
+    color: white;
+}
+
+.btnEliminar:hover {
+    background-color: #fc3306;
+    color: white;
 }
 
 
