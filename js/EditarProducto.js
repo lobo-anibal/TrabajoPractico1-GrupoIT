@@ -24,7 +24,6 @@ createApp({
         .then((response) => response.json())
         .then((data) => {
           this.datos = data;
-          
           this.id = data.id;
           this.nombre = data.nombre;
           this.imagen = data.imagen;
@@ -64,3 +63,8 @@ createApp({
     this.fetchdata(this.url);
   } /*created*/,
 }).mount("#app");
+
+
+function redirigir() {
+  window.location.href = "./productosAdmin.html";
+}

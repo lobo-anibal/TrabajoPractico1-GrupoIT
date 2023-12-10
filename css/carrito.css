@@ -43,7 +43,7 @@ h1 {
 
 .botonesADM button a {
     text-decoration: none; /* Elimina el subrayado */
-    color: white; /* Cambia el color del texto */
+    color: black; /* Cambia el color del texto */
 }
 
 .uActivo{

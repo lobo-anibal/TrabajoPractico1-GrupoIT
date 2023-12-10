@@ -19,9 +19,13 @@
 
     </header>
 
-    <section class="body2">
+    <section class="body">
         <h1>Formulario de Carga de Productos</h1>
         <section id="app" class="section">
+
+            <div class="div-cerrar">
+                <button class="cerrar" onclick="redirigir()">X</button>
+            </div>
 
             <form id="productoForm">
                 <label for="id">Id</label>
@@ -29,10 +33,10 @@
 
                 <label for="nombre">Nombre del Producto:</label>
                 <input type="text" id="nombre" name="nombre" required v-model="nombre" class="inputp"><br>
-                
+
                 <label for="descripcion" class="labelp">Descripcion:</label>
                 <input type="text" id="descripcion" name="descripcion" v-model="descripcion" class="inputp"><br>
-                
+
                 <label for="precio">Precio:</label>
                 <input type="number" id="precio" name="precio" required v-model="precio" class="inputp"><br>
 
@@ -41,9 +45,9 @@
 
                 <label for="imagen">URL de la Imagen:</label>
                 <input type="url" id="imagen" name="imagen" required v-model="imagen" class="inputp"><br>
-
-
-                <button type="button" @click="editar()">Enviar</button>
+                                                                                                                                                                                         
+                <button class="Enviar" type="button" @click="editar()">Enviar</button>
+    
             </form>
         </section>
     </section>

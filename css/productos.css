@@ -64,3 +64,11 @@ button:hover {
   color: black; /* Cambia el color del texto */
 }
 
+.pie-compras{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+  height: 4vh;
+  background-color: #00ff99;
+}

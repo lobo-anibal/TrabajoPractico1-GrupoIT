@@ -40,5 +40,10 @@ function validarF() {
         consultaV.innerHTML = "&nbsp";
     }
 
+    if (!error) {
+        alert("Formulario validado con éxito. Enviando...");
+    }
+
     return !error;
 }
+

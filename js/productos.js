@@ -102,8 +102,9 @@ createApp({
   computed: {
     totalCompra() {
       this.total = this.carrito.reduce((sum, item) => sum + item.precio * item.cantidad,0);
+      this.total = parseFloat(this.total.toFixed(2));
       console.log("total--> ", this.total);
-      return this.carrito.reduce((sum, item) => sum + item.precio * item.cantidad,0);
+      return this.total
     },
   },
   created() {
