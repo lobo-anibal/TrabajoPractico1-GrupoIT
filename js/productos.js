@@ -54,7 +54,7 @@ createApp({
       fetch(url, options)
         .then((res) => res.text())
         .then((res) => {
-          alert("Registro Eliminado");
+          alert("Producto Eliminado");
           location.reload();
         });
     },
@@ -74,12 +74,12 @@ createApp({
       };
       fetch(this.url, options)
         .then(function () {
-          alert("Registro grabado");
+          alert("Producto Guardado");
           window.location.href = "./productosAdmin.html";
         })
         .catch((err) => {
           console.error(err);
-          alert("Error al Grabar");
+          alert("Error al Guardar");
         });
     },
     comprar(producto) {
@@ -92,7 +92,7 @@ createApp({
       }
       sessionStorage.setItem("pComprados", JSON.stringify(this.pComprados));
       console.log("Productos Comprados:", this.pComprados);
-      // alert("Producto Agregado al Carrito");
+      alert("Producto Agregado al Carrito");
     },
     finalizarcompra() {
       alert("Gracias por su Compra");

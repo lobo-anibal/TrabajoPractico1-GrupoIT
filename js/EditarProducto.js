@@ -49,7 +49,7 @@ createApp({
         }
         fetch(this.url,options)
         .then(function() {
-            alert("Registro Modificado")
+            alert("Producto Modificado")
             window.location.href="./productosAdmin.html";
         })
         .catch(err => {
