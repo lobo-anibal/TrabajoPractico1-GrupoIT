@@ -1,4 +1,3 @@
-
 var id = location.search.substr(4);
 //console.log(id);
 
@@ -15,7 +14,7 @@ createApp({
       imagen: "",
       precio: 0,
       stock: 0,
-      descripcion:"",
+      descripcion: "",
     }; /*return*/
   } /*data */,
   methods: {
@@ -29,41 +28,48 @@ createApp({
           this.imagen = data.imagen;
           this.precio = data.precio;
           this.stock = data.stock;
-          this.descripcion=data.descripcion;
+          this.descripcion = data.descripcion;
           console.log("Productos:", this.datos);
         });
     },
-    editar(){
-        let producto = {
-            nombre: this.nombre,
-            precio: this.precio,
-            stock: this.stock,
-            imagen: this.imagen,
-            descripcion: this.descripcion,
-        }
-        var options = {
-            body: JSON.stringify(producto),
-            method:"PUT",
-            headers:{'Content-Type': 'application/json'},
-            redirect: 'follow'
-        }
-        fetch(this.url,options)
-        .then(function() {
-            alert("Producto Modificado")
-            window.location.href="./productosAdmin.html";
+    editar() {
+      let producto = {
+        nombre: this.nombre,
+        precio: this.precio,
+        stock: this.stock,
+        imagen: this.imagen,
+        descripcion: this.descripcion,
+      };
+      var options = {
+        body: JSON.stringify(producto),
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        redirect: "follow",
+      };
+      fetch(this.url, options)
+        .then(() => {
+          //this.alertaeditar();
+          //window.location.href = "./productosAdmin.html";
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Producto Actualizado",
+            showConfirmButton: false,
+            timer: 1500
+          }).then(()=>{
+            window.location.href = "./productosAdmin.html";
+          });
         })
-        .catch(err => {
-            console.error(err);
-            alert("Error al Modificar")
-        })
-    }
-    
+        .catch((err) => {
+          console.error(err);
+          alert("Error al Modificar");
+        });
+    },
   } /*methods*/,
   created() {
     this.fetchdata(this.url);
   } /*created*/,
 }).mount("#app");
-
 
 function redirigir() {
   window.location.href = "./productosAdmin.html";

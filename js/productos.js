@@ -57,8 +57,27 @@ createApp({
       fetch(url, options)
         .then((res) => res.text())
         .then((res) => {
-          alert("Producto Eliminado");
-          location.reload();
+          //alert("Producto Eliminado");
+          Swal.fire({
+            title: "Estas Seguro?",
+            text: "¡No podrás revertir esto!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Si, Eliminar",
+            cancelButtonText: "Cancelar",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Borrado!",
+                text: "Producto Eliminado.",
+                icon: "success",
+              });
+              location.reload();
+            }
+          });
+          //location.reload();
         });
     },
     agregar() {
@@ -77,8 +96,17 @@ createApp({
       };
       fetch(this.url, options)
         .then(function () {
-          alert("Producto Guardado");
-          window.location.href = "./productosAdmin.html";
+          //alert("Producto Guardado");
+          //window.location.href = "./productosAdmin.html";
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Producto Agregado",
+            showConfirmButton: false,
+            timer: 1500,
+          }).then(() => {
+            window.location.href = "./productosAdmin.html";
+          });
         })
         .catch((err) => {
           console.error(err);
@@ -97,25 +125,23 @@ createApp({
       //console.log("Productos Comprados:", this.pComprados);
       //alert("Producto Agregado al Carrito");
       Swal.fire({
-        title: "Compra realizada",
-        text: `Has comprado ${producto.nombre}`,
+        title: "Agregaste al Carrito",
+        text: `${producto.nombre}`,
         icon: "success",
         showCancelButton: true,
         confirmButtonText: "Seguir Comprando",
         cancelButtonText: "Ir al Carrito",
         confirmButtonColor: "#3085d6", // Cambia el color del botón "Seguir Comprando"
-        cancelButtonColor: "#1B8756"
+        cancelButtonColor: "#1B8756",
       }).then((result) => {
         if (result.isConfirmed) {
-          
         } else if (result.dismiss === Swal.DismissReason.cancel) {
           window.location.href = "./Carrito.html";
         }
       });
-
     },
     finalizarcompra() {
-      aux=this.carrito.reduce((sum, item) => sum + item.cantidad, 0);
+      aux = this.carrito.reduce((sum, item) => sum + item.cantidad, 0);
       Swal.fire({
         title: "Compra realizada",
         text: `Has comprado ${aux} productos`,
@@ -124,8 +150,6 @@ createApp({
       }).then(() => {
         window.location.href = "./productos.html";
       });
-      // alert("Gracias por su Compra");
-      // window.location.href = "./productos.html";
     },
   } /*methods*/,
   computed: {
@@ -148,8 +172,7 @@ function redirigir() {
   window.location.href = "./productosAdmin.html";
 }
 
-function cerrarAdmin (){
+function cerrarAdmin() {
   window.location.href = "./productos.html";
-  sessionStorage.setItem("validar","true");
+  sessionStorage.setItem("validar", "true");
 }
-

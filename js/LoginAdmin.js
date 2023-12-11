@@ -31,8 +31,18 @@ createApp({
       }
 
       if (this.aux === true) {
-        alert("Usuario o contraseña incorrectos");
-        window.location.href = "./productos.html";
+        //alert("Usuario o contraseña incorrectos");
+        //window.location.href = "./productos.html";
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: "Usuario o contraseña incorrectos",
+          showConfirmButton: true,
+        }).then(()=>{
+          window.location.href = "./productos.html";
+        });
+
+        
       }
     },
   } /*methods*/,
