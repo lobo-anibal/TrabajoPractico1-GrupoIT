@@ -41,15 +41,15 @@
                     <tr v-for="item in carrito" :key="item.id">
                         <td class="tbcolumn">{{item.cantidad}}</td>
                         <td class="tbcolumn">{{item.nombre}}</td>
-                        <td class="tbcolumn">{{item.precio}}</td>
-                        <td class="tbcolumn">{{item.precio * item.cantidad}} </td>
+                        <td class="tbcolumn">${{item.precio}}</td>
+                        <td class="tbcolumn">${{item.precio * item.cantidad}} </td>
                         <td class="tbcolumn"><img :src="item.imagen" alt="imgen" width="80"></td>
                     </tr>
 
                 </table>
                 
                 <div class="totalfooter">
-                    <h4>Total: {{totalCompra}} </h4>
+                    <h4>Total: ${{totalCompra}} </h4>
                 </div>
                 <div class="carritofooter">
                     <button type="button" class="btn btn-success" @click="finalizarcompra">Finalizar Compra</button>

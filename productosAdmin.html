@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="body">
+<body class="body" onload="validaringreso()">
     <header class="encabezado">
         <!-- Encabezado de todas las Paginas script -->
     </header>
@@ -36,10 +36,10 @@
                     </div>
                     <div class="botonesADM">
                         <button v-on:click="limpiar">Limpiar Busqueda</button>
-                        <button ><a href="./AgregarProducto.html" >Agregar Producto</a></button>
-                        <button><a href="./productos.html" >Cerrar sesion</a></button>
+                        <button ><a href="./AgregarProducto.html">Agregar Producto</a></button>
+                        <button onclick="cerrarAdmin()">Cerrar sesion</button>
                     </div>
-                    
+
                 </div>
                 <table class="table-responsive">
                     <tr class="filat">
@@ -57,13 +57,14 @@
                         <td class="tbcolumn">{{item.id}}</td>
                         <td class="tbcolumn">{{item.nombre}}</td>
                         <td class="tbcolumn">{{item.descripcion}}</td>
-                        <td class="tbcolumn">{{item.precio}}</td>
+                        <td class="tbcolumn">${{item.precio}}</td>
                         <td class="tbcolumn">{{item.stock}}</td>
                         <td class="tbcolumn"><img :src="item.imagen" alt="Imagen del producto" width="80"></td>
 
 
                         <td class="tbcolumn">
-                            <button @click="" class="btnEditar"><a :href="'EditarProducto.html?id='+ item.id" class="btnEditar">Editar</a></button>
+                            <button @click="" class="btnEditar"><a :href="'EditarProducto.html?id='+ item.id"
+                                    class="btnEditar">Editar</a></button>
                         </td>
                         <td class="tbcolumn">
                             <button @click="eliminar(item.id)" class="btnEliminar">Eliminar</button>
@@ -86,6 +87,7 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/productos.js"></script>
+    <script src="./js/validarform.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
