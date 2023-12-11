@@ -94,12 +94,38 @@ createApp({
         this.pComprados.push({ ...producto, cantidad: 1 });
       }
       sessionStorage.setItem("pComprados", JSON.stringify(this.pComprados));
-      console.log("Productos Comprados:", this.pComprados);
-      alert("Producto Agregado al Carrito");
+      //console.log("Productos Comprados:", this.pComprados);
+      //alert("Producto Agregado al Carrito");
+      Swal.fire({
+        title: "Compra realizada",
+        text: `Has comprado ${producto.nombre}`,
+        icon: "success",
+        showCancelButton: true,
+        confirmButtonText: "Seguir Comprando",
+        cancelButtonText: "Ir al Carrito",
+        confirmButtonColor: "#3085d6", // Cambia el color del botón "Seguir Comprando"
+        cancelButtonColor: "#1B8756"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          window.location.href = "./Carrito.html";
+        }
+      });
+
     },
     finalizarcompra() {
-      alert("Gracias por su Compra");
-      window.location.href = "./productos.html";
+      aux=this.carrito.reduce((sum, item) => sum + item.cantidad, 0);
+      Swal.fire({
+        title: "Compra realizada",
+        text: `Has comprado ${aux} productos`,
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then(() => {
+        window.location.href = "./productos.html";
+      });
+      // alert("Gracias por su Compra");
+      // window.location.href = "./productos.html";
     },
   } /*methods*/,
   computed: {
