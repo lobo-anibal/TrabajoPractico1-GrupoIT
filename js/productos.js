@@ -17,24 +17,21 @@ createApp({
       carrito: [],
       cant: 0,
       uActivo: "",
-      validar: "true",
       total: 0,
     }; /*return*/
   } /*data */,
   methods: {
-    async fetchdata(url) {
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
-
-        this.datos = data;
-        this.filtrados = data;
-        this.uActivo = sessionStorage.getItem("username");
-        this.validar = sessionStorage.getItem("validar");
-        this.carrito = JSON.parse(sessionStorage.getItem("pComprados")) || [];
-      } catch (error) {
-        console.error("Error al cargar datos:", error);
-      }
+    fetchdata(url) {
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          this.datos = data;
+          this.filtrados = data;
+          this.uActivo = sessionStorage.getItem("username");
+          this.carrito = JSON.parse(sessionStorage.getItem("pComprados")) || [];
+          // console.log("Productos:", this.datos);
+          // console.log("usuario:", this.uActivo);
+        });
     },
     productosFiltrados() {
       if (this.buscar === "") {
@@ -104,13 +101,10 @@ createApp({
   } /*methods*/,
   computed: {
     totalCompra() {
-      this.total = this.carrito.reduce(
-        (sum, item) => sum + item.precio * item.cantidad,
-        0
-      );
+      this.total = this.carrito.reduce((sum, item) => sum + item.precio * item.cantidad,0);
       this.total = parseFloat(this.total.toFixed(2));
       console.log("total--> ", this.total);
-      return this.total;
+      return this.total
     },
   },
   created() {
@@ -118,12 +112,7 @@ createApp({
   } /*created*/,
 }).mount("#app");
 
+
 function redirigir() {
   window.location.href = "./productosAdmin.html";
 }
-
-function cerrarAdmin (){
-  window.location.href = "./productos.html";
-  sessionStorage.setItem("validar","true");
-}
-

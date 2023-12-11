@@ -61,7 +61,7 @@ h1 {
 }
 
 .filat {
-    background-color: #3498db;
+    background-color: rgb(230, 137, 214);
     color: #fff;
 }
 
@@ -114,6 +114,10 @@ h1 {
 
 .carritofooter{
 text-align: center;
+
+}
+#botonfc {
+    background-color: #5c5757;
 }
 
 .totalfooter{

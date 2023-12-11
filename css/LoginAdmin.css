@@ -11,7 +11,7 @@ body {
 }
 
 .login-form {
-    background-color: #f4f4f4;
+    background-color: grey;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ input {
 }
 
 button {
-    background-color: #3498db;
+    background-color: rgb(230, 137, 214);
     color: #fff;
     border: none;
     padding: 10px;
@@ -45,23 +45,9 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color:#333 ;
 }
 
 a{
     text-decoration: none;
-}
-
-.cerrar{
-    text-align: right;
-    /* background-color: #3498db; */
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.cerrar:hover {
-    background-color: #2980b9;
 }

@@ -36,14 +36,14 @@ h1 {
 }
 
 .botonesADM button {
-    color: #fff;
-    background-color: #3498db!important;
+    color: black;
+    background-color:rgb(230, 137, 214)!important;
   
 }
 
 .botonesADM button a {
     text-decoration: none; /* Elimina el subrayado */
-    color: white; /* Cambia el color del texto */
+    color: black; /* Cambia el color del texto */
 }
 
 .uActivo{
@@ -61,7 +61,7 @@ h1 {
 }
 
 .filat {
-    background-color: #3498db;
+    background-color: rgb(15, 15, 41);
     color: #fff;
 }
 
@@ -76,7 +76,7 @@ h1 {
 }
 
 .btnEditar{
-    background-color: #34c8db;
+    background-color: #333;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -86,7 +86,7 @@ h1 {
 }
 
 .btnEliminar {
-    background-color: #db3442;
+    background-color:rgb(230, 137, 214)  ;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -100,12 +100,12 @@ h1 {
 
 
 .btnEditar:hover{
-    background-color: #0897e4;
+    background-color: midnightblue;
     color: white;
 }
 
 .btnEliminar:hover {
-    background-color: #fc3306;
+    background-color: #333;
     color: white;
 }
 
@@ -118,4 +118,7 @@ text-align: center;
 
 .totalfooter{
 background-color: aliceblue;
+}
+#prodencon {
+    font-size: 25 px;
 }

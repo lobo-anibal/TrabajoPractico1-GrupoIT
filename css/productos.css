@@ -41,7 +41,7 @@ body {
 }
 
 button {
-  background-color: #00ff99;
+  background-color: rgb(230, 137, 214);
   color: #171515;
   border: none;
   padding: 10px;
@@ -55,7 +55,7 @@ button:hover {
 
 .botonesADM button {
   color: black;
-  background-color: #3498db!important;
+  background-color: rgb(230, 137, 214)!important;
 
 }
 
@@ -68,7 +68,13 @@ button:hover {
   display: flex;
   justify-content:space-between;
   align-items: center;
-
   height: 4vh;
-  background-color: #00ff99;
+  
+}
+#botoncarrito {
+  background-color: black;
+  font-size: 20px;
+}
+.prodencontrados {
+  font-size: 25px;
 }

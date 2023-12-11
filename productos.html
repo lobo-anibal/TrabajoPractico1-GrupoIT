@@ -46,7 +46,7 @@
                             <img :src="item.imagen" alt="Imagen del producto">
                         </div>
                         <div class="center card-footer">
-                            <h5>Precio: ${{item.precio}}</h5>
+                            <h5>Precio: {{item.precio}}</h5>
                         </div>
                         <div class="botonesADM">
                             <button  v-on:click="comprar(item)">Comprar</button>
@@ -55,11 +55,11 @@
                 </div>
                 
                 <div>
-                    <h2>Productos Encontrados: {{filtrados.length}}</h2>
+                    <h2 class="prodencontrados">Productos Encontrados: {{filtrados.length}}</h2>
                 </div>
                 <div class="pie-compras">
-                    <h5>Productos en el carrito: {{cant}}</h5>
-                    <a type="button" class="btn btn-success" href="./Carrito.html">Ver el Carrito</a>
+                    <h5 class="prodencontrados">Productos en el Carrito: {{cant}}</h5>
+                    <a id="botoncarrito"  type="button" class="btn btn-success" href="./Carrito.html">Ver el Carrito</a>
                 </div>
 
             </section>
