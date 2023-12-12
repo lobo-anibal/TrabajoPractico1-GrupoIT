@@ -43,24 +43,23 @@
                 </div>
                 <table class="table-responsive">
                     <tr class="filat">
-                        <th class="tbheader">Id</th>
+                        <th class="tbheader d-none d-md-table-cell">Id</th>
                         <th class="tbheader">Nombre</th>
-                        <th class="tbheader">Descripcion</th>
+                        <th class="tbheader d-none d-md-table-cell">Descripcion</th>
                         <th class="tbheader">Precio</th>
-                        <th class="tbheader">Stock</th>
+                        <th class="tbheader d-none d-md-table-cell">Stock</th>
                         <th class="tbheader">Imagen</th>
                         <th class="tbheader"></th>
                         <th class="tbheader"></th>
                     </tr>
 
                     <tr v-for="item in filtrados" :key="item.id">
-                        <td class="tbcolumn">{{item.id}}</td>
+                        <td class="tbcolumn d-none d-md-table-cell">{{item.id}}</td>
                         <td class="tbcolumn">{{item.nombre}}</td>
-                        <td class="tbcolumn">{{item.descripcion}}</td>
-                        <td class="tbcolumn">{{item.precio}}</td>
-                        <td class="tbcolumn">{{item.stock}}</td>
+                        <td class="tbcolumn d-none d-md-table-cell">{{item.descripcion}}</td>
+                        <td class="tbcolumn">${{item.precio}}</td>
+                        <td class="tbcolumn d-none d-md-table-cell">{{item.stock}}</td>
                         <td class="tbcolumn"><img :src="item.imagen" alt="Imagen del producto" width="80"></td>
-
 
                         <td class="tbcolumn">
                             <button @click="" class="btnEditar"><a :href="'EditarProducto.html?id='+ item.id" class="btnEditar">Editar</a></button>
