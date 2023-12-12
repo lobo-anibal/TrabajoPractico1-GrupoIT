@@ -26,6 +26,7 @@ createApp({
           this.aux = false;
           window.location.href = "./productosAdmin.html";
           sessionStorage.setItem("username", this.username);
+          sessionStorage.setItem("validar", this.aux);
         }
       }
 
