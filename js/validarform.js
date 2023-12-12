@@ -47,3 +47,24 @@ function validarF() {
     return !error;
 }
 
+// Validar el ingreso a la pagina de admin
+
+const validar = sessionStorage.getItem("validar");
+
+function validaringreso() {
+  console.log("Validar", validar);
+  if (validar === "false") {
+    console.log("Entra a la Pagina Admin");
+  } else {
+    //alert("No tiene los privilegios para entrar a la pagina");
+    //window.location.href = "./productos.html";
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "No tiene los privilegios para entrar a la pagina",
+      showConfirmButton: true,
+    }).then(() => {
+      window.location.href = "./productos.html";
+    });
+  }
+}
